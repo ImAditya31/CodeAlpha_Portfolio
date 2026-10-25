@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aditya Kumar | Full Stack Web Developer portfolio — MCA student building responsive, user-focused digital experiences." />
+  <meta name="theme-color" content="#f4f7ff" />
+  <title>Aditya Kumar | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========= PAGE LOADER ========= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <span class="loader-text">AK.</span>
+  </div>
+
+  <!-- ========= CUSTOM CURSOR ========= -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
+  <!-- ========= HEADER / NAV ========= -->
+  <header id="header">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#" aria-label="Go to top">AK<span>.</span></a>
+
+      <nav class="nav" id="mainNav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <nav class="mobile-nav-links" aria-label="Mobile navigation">
+        <a href="#about" class="mobile-link">✦ About</a>
+        <a href="#skills" class="mobile-link">⚙ Skills</a>
+        <a href="#projects" class="mobile-link">🚀 Projects</a>
+        <a href="#experience" class="mobile-link">💼 Experience</a>
+        <a href="#education" class="mobile-link">🎓 Education</a>
+        <a href="#contact" class="mobile-link">📬 Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========= HERO ========= -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Available for opportunities
+          </span>
+
+          <h1>Hello, I'm<br><span class="name-highlight">Aditya Kumar</span></h1>
+
+          <p class="role">
+            <span class="role-static">I'm a </span>
+            <span class="role-typed" id="typedText"></span><span class="cursor-blink">|</span>
+          </p>
+
+          <p class="tagline">I design and build responsive, clean, and user-focused digital experiences that combine strong frontend aesthetics with solid backend logic.</p>
+
+          <div class="cta-row">
+            <a class="primary-btn" href="#projects">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              View Projects
+            </a>
+            <a class="secondary-btn" href="#contact">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Hire Me
+            </a>
+            <a class="ghost-btn" href="https://github.com/jmaditya31" target="_blank" rel="noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>📍 Greater Noida, India</span>
+            <span>⚡ Full Stack Dev</span>
+            <span>🎯 UI/UX Focused</span>
+          </div>
+        </div>
+
+        <div class="profile-panel">
+          <div class="profile-frame">
+            <img src="profile.jpg" alt="Aditya Kumar — Full Stack Web Developer" loading="eager" />
+            <span class="profile-badge badge-top">🎓 MCA Student</span>
+            <span class="profile-badge badge-bottom">⭐ O-Grade</span>
+          </div>
+
+          <!-- Floating stats -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-count="3">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-count="2">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-count="5">0</span>+
+              <span class="stat-label">Certificates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= ABOUT ========= -->
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <span class="section-label">✦ About</span>
+        <h2>Who I am</h2>
+        <p class="section-sub">A passionate developer turning ideas into elegant digital products.</p>
+      </div>
+
+      <div class="about-grid reveal">
+        <div class="about-card">
+          <div class="about-body">
+            <p>I am a <strong>Full Stack Web Developer</strong> and MCA student at GL Bajaj Institute of Technology &amp; Management, Greater Noida. I enjoy designing and building responsive web applications, intuitive dashboards, and database-driven systems using HTML, CSS, JavaScript, Python, and MySQL.</p>
+            <p>I have completed internships at <strong>Cisco Networking Academy</strong> and <strong>EduSkills Academy (AICTE)</strong>, earning an <strong>Outstanding (O)</strong> grade — the highest possible — in Python Fullstack Development.</p>
+            <div class="about-badges">
+              <span>💡 Responsive Design</span>
+              <span>🧠 Database Logic</span>
+              <span>🛠 Problem Solving</span>
+              <span>🎨 UI/UX Design</span>
+              <span>🔗 API Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= SKILLS ========= -->
+    <section id="skills" class="section">
+      <div class="section-heading reveal">
+        <span class="section-label">⚙ Skills</span>
+        <h2>Core expertise</h2>
+        <p class="section-sub">Technologies and tools I work with.</p>
+      </div>
+
+      <div class="skills-grid reveal-stagger">
+        <article class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Tech</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">🗃</div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Oracle</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">🧰</div>
+          <h3>Dev Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">📚</div>
+          <h3>CS Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">OOPs</span>
+            <span class="skill-tag">DSA</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">OS</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-icon">🖥</div>
+          <h3>Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </article>
+
+        <article class="skill-card wide">
+          <div class="skill-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Patient</span>
+            <span class="skill-tag">Honest</span>
+            <span class="skill-tag">Dedicated</span>
+            <span class="skill-tag">Team Player</span>
+            <span class="skill-tag">Fast Learner</span>
+            <span class="skill-tag">Detail-Oriented</span>
+            <span class="skill-tag">Creative Thinker</span>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- ========= PROJECTS ========= -->
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <span class="section-label">🚀 Projects</span>
+        <h2>Featured work</h2>
+        <p class="section-sub">Things I've built with passion and purpose.</p>
+      </div>
+
+      <div class="projects-grid reveal-stagger">
+
+        <article class="project-card">
+          <div class="project-banner project-banner-blue">
+            <span class="project-banner-emoji">🧪</span>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Pathology Management System</h3>
+              <span class="tag">Desktop</span>
+            </div>
+            <div class="tech">
+              <span class="tech-pill">Visual Basic</span>
+              <span class="tech-pill">Oracle</span>
+              <span class="tech-pill">MySQL</span>
+            </div>
+            <ul>
+              <li>Built a pathology lab system for patient records, scheduling and report generation.</li>
+              <li>Integrated database workflows with MySQL and Oracle for secure, organized data storage.</li>
+              <li>Improved efficiency with a user-friendly lab operations dashboard.</li>
+            </ul>
+            <a class="project-link" href="https://github.com/jmaditya31" target="_blank" rel="noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card featured">
+          <div class="project-banner project-banner-green">
+            <span class="project-banner-emoji">🌤</span>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Weather Prediction System</h3>
+              <span class="tag tag-alt">Web App</span>
+            </div>
+            <div class="tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+            <ul>
+              <li>Created a responsive weather dashboard using real-time API data.</li>
+              <li>Presented temperature, humidity and wind conditions with a clear interface.</li>
+              <li>Focused on faster readability and mobile-first usability.</li>
+            </ul>
+            <a class="project-link" href="https://github.com/ImAditya31/WeatherPrediction" target="_blank" rel="noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-banner project-banner-purple">
+            <span class="project-banner-emoji">🔧</span>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>KaamRush</h3>
+              <span class="tag tag-purple">AI Matching</span>
+            </div>
+            <div class="tech">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+            <ul>
+              <li>Designed a service discovery platform connecting users with local providers.</li>
+              <li>Included job browsing, matching and review features for smoother engagement.</li>
+              <li>Built with a clear user flow and a more intuitive browsing experience.</li>
+            </ul>
+            <a class="project-link" href="https://github.com/jmaditya31" target="_blank" rel="noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              View on GitHub ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========= EXPERIENCE ========= -->
+    <section id="experience" class="section">
+      <div class="section-heading reveal">
+        <span class="section-label">💼 Experience</span>
+        <h2>Career growth</h2>
+        <p class="section-sub">Internships and professional learning milestones.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">📅 May 2026 – Jun 2026</p>
+            <h3>Virtual Intern — Cisco Networking Academy</h3>
+            <p>Completed Cisco Packet Tracer and Networking Essentials courses, focusing on protocols, connectivity, and infrastructure fundamentals.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Networking</span>
+              <span class="tl-tag">Cisco</span>
+              <span class="tl-tag">Protocols</span>
+            </div>
+            <button class="cert-show-btn" type="button" data-certificate="certificates/cisco-packet-tracer.pdf" data-title="Cisco Packet Tracer Certificate">
+              📄 Show Certificate
+            </button>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <p class="timeline-date">📅 Jun 2026 – Aug 2026</p>
+            <h3>Python Fullstack Developer — EduSkills Academy (AICTE)</h3>
+            <p>Built Python-based full stack web applications during an 8-week internship and earned an <strong>Outstanding (O)</strong> grade — the highest possible performance rating.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">Full Stack</span>
+              <span class="tl-tag">AICTE</span>
+              <span class="tl-tag tl-tag-green">⭐ O-Grade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= EDUCATION ========= -->
+    <section id="education" class="section">
+      <div class="section-heading reveal">
+        <span class="section-label">🎓 Education</span>
+        <h2>Academic background</h2>
+        <p class="section-sub">The foundation of my technical journey.</p>
+      </div>
+
+      <div class="education-grid reveal-stagger">
+        <article class="edu-card current">
+          <div class="edu-icon">🎓</div>
+          <span class="edu-year">2025 – Present</span>
+          <h3>MCA</h3>
+          <p>IILM university</p>
+          <span class="edu-status">Currently Enrolled</span>
+        </article>
+        <article class="edu-card">
+          <div class="edu-icon">🏫</div>
+          <span class="edu-year">2022 – 2025</span>
+          <h3>BCA</h3>
+          <p>Patliputra University (RKD College), Patna</p>
+        </article>
+        <article class="edu-card">
+          <div class="edu-icon">📖</div>
+          <span class="edu-year">2022</span>
+          <h3>Intermediate (PCM)</h3>
+          <p>Gopeshwar College, Bihar</p>
+        </article>
+        <article class="edu-card">
+          <div class="edu-icon">✏️</div>
+          <span class="edu-year">2020</span>
+          <h3>Matriculation</h3>
+          <p>Sri KBB SHVS Kochharout, Bihar</p>
+        </article>
+      </div>
+
+      <div class="certi-box reveal">
+        <h3>🏅 Certifications &amp; Achievements</h3>
+        <ul>
+          <li>Market Research &amp; Research Methodology — <em>Infosys</em></li>
+          <li>AI Prompt Engineering — <em>Microsoft &amp; Reliance Digital</em></li>
+          <li>IGNITE 2K26 — Build for Bharat Hackathon Participant</li>
+        </ul>
+
+        <div class="cert-links">
+          <div class="cert-item">
+            <div class="cert-icon-wrap">☁️</div>
+            <span class="cert-name">AWS Cloud Practitioner</span>
+            <button class="cert-show-btn" type="button" data-certificate="certificates/aws-cloud-practitioner.pdf" data-title="AWS Cloud Practitioner Certificate">
+              📄 View Certificate
+            </button>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-icon-wrap">🌐</div>
+            <span class="cert-name">Network Technician</span>
+            <button class="cert-show-btn" type="button" data-certificate="certificates/network-technician.pdf" data-title="Network Technician Career Path Certificate">
+              📄 View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= CONTACT ========= -->
+    <section id="contact" class="section">
+      <div class="section-heading reveal">
+        <span class="section-label">📬 Contact</span>
+        <h2>Let's connect</h2>
+        <p class="section-sub">Open to freelance, internships, and full-time roles.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-left">
+          <div class="contact-list">
+            <a class="contact-card" href="mailto:adityamca70@gmail.com">
+              <span class="contact-icon">📧</span>
+              <div>
+                <label>Email</label>
+                <span>adityamca70@gmail.com</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a class="contact-card" href="tel:+917070200589">
+              <span class="contact-icon">📞</span>
+              <div>
+                <label>Phone</label>
+                <span>+91-7070200589</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a class="contact-card" href="https://linkedin.com/in/26adityakumar" target="_blank" rel="noreferrer">
+              <span class="contact-icon">🔗</span>
+              <div>
+                <label>LinkedIn</label>
+                <span>linkedin.com/in/26adityakumar</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+
+            <a class="contact-card" href="https://github.com/jmaditya31" target="_blank" rel="noreferrer">
+              <span class="contact-icon">💻</span>
+              <div>
+                <label>GitHub</label>
+                <span>github.com/jmaditya31</span>
+              </div>
+              <span class="contact-arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="availability-card">
+            <span class="avail-dot"></span>
+            <div>
+              <strong>Open to Work</strong>
+              <p>Available for internships &amp; full-time roles starting immediately.</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name</label>
+              <input id="fname" type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email</label>
+              <input id="femail" type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input id="fsubject" type="text" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <p id="msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========= FOOTER ========= -->
+  <footer>
+    <div class="footer-inner">
+      <a class="footer-logo" href="#">AK<span>.</span></a>
+      <p>© <span id="year"></span> <strong>Aditya Kumar</strong> — Built with ❤️ using HTML, CSS &amp; JavaScript</p>
+      <div class="footer-links">
+        <a href="https://github.com/jmaditya31" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/26adityakumar" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:adityamca70@gmail.com">Email</a>
+      </div>
+    </div>
+    <a href="#" class="scroll-top" aria-label="Scroll to top" title="Back to top">↑</a>
+  </footer>
+
+  <!-- ========= CERTIFICATE DIALOG ========= -->
+  <dialog class="certificate-dialog" id="certificateDialog" aria-labelledby="certificateTitle">
+    <div class="certificate-dialog-header">
+      <h2 id="certificateTitle">Certificate</h2>
+      <button class="certificate-close" type="button" aria-label="Close certificate preview">×</button>
+    </div>
+    <iframe class="certificate-preview" title="Certificate preview"></iframe>
+  </dialog>
+
+  <script>
+    /* =============================================
+       PAGE LOADER
+    ============================================= */
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('done');
+        setTimeout(() => loader.remove(), 500);
+      }, 800);
+    });
+
+    /* =============================================
+       CUSTOM CURSOR (desktop only)
+    ============================================= */
+    const cursor = document.getElementById('cursor');
+    const trail  = document.getElementById('cursorTrail');
+    let mx = 0, my = 0, tx = 0, ty = 0;
+
+    if (window.matchMedia('(pointer: fine)').matches) {
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cursor.style.transform = `translate(${mx}px,${my}px)`;
+      });
+      (function tick() {
+        tx += (mx - tx) * 0.18;
+        ty += (my - ty) * 0.18;
+        trail.style.transform = `translate(${tx}px,${ty}px)`;
+        requestAnimationFrame(tick);
+      })();
+
+      document.querySelectorAll('a,button,.skill-card,.project-card,.edu-card,.contact-card').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursor.classList.add('hovered');
+          trail.classList.add('hovered');
+        });
+        el.addEventListener('mouseleave', () => {
+          cursor.classList.remove('hovered');
+          trail.classList.remove('hovered');
+        });
+      });
+    } else {
+      cursor.style.display = 'none';
+      trail.style.display = 'none';
+    }
+
+    /* =============================================
+       YEAR
+    ============================================= */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* =============================================
+       DARK MODE
+    ============================================= */
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark  = window.matchMedia('(prefers-color-scheme: dark)');
+    const savedTheme   = localStorage.getItem('theme');
+
+    function applyTheme(dark) {
+      document.body.classList.toggle('dark', dark);
+      themeToggle.textContent = dark ? '☀️' : '🌙';
+      document.querySelector('meta[name="theme-color"]')
+        .setAttribute('content', dark ? '#06091a' : '#f4f7ff');
+    }
+
+    applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark.matches));
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      applyTheme(isDark);
+    });
+
+    /* =============================================
+       HAMBURGER MENU
+    ============================================= */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+      mobileNav.classList.toggle('open', open);
+      mobileNav.setAttribute('aria-hidden', !open);
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        mobileNav.classList.remove('open');
+        mobileNav.setAttribute('aria-hidden', true);
+      });
+    });
+
+    /* =============================================
+       TYPING ANIMATION
+    ============================================= */
+    const roles = [
+      'Full Stack Developer',
+      'MCA Student',
+      'UI/UX Enthusiast',
+      'Python Developer',
+      'Problem Solver'
+    ];
+    let ri = 0, ci = 0, deleting = false;
+    const typed = document.getElementById('typedText');
+
+    function typeWriter() {
+      const word = roles[ri];
+      if (!deleting) {
+        typed.textContent = word.slice(0, ++ci);
+        if (ci === word.length) { deleting = true; setTimeout(typeWriter, 1800); return; }
+      } else {
+        typed.textContent = word.slice(0, --ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; setTimeout(typeWriter, 300); return; }
+      }
+      setTimeout(typeWriter, deleting ? 60 : 100);
+    }
+    setTimeout(typeWriter, 1000);
+
+    /* =============================================
+       STAT COUNTER ANIMATION
+    ============================================= */
+    function animateCounter(el) {
+      const target = +el.dataset.count;
+      let current = 0;
+      const step = Math.ceil(target / 30);
+      const t = setInterval(() => {
+        current = Math.min(current + step, target);
+        el.textContent = current;
+        if (current >= target) clearInterval(t);
+      }, 40);
+    }
+
+    const counterObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.stat-num').forEach(animateCounter);
+          counterObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const statsEl = document.querySelector('.hero-stats');
+    if (statsEl) counterObs.observe(statsEl);
+
+    /* =============================================
+       PROGRESS BARS
+    ============================================= */
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+          barObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    document.querySelectorAll('.proficiency').forEach(el => barObs.observe(el));
+
+    /* =============================================
+       CERTIFICATE DIALOG
+    ============================================= */
+    const certDialog   = document.getElementById('certificateDialog');
+    const certTitle    = document.getElementById('certificateTitle');
+    const certPreview  = certDialog.querySelector('.certificate-preview');
+
+    document.querySelectorAll('[data-certificate]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        certTitle.textContent = btn.dataset.title;
+        certPreview.src = btn.dataset.certificate;
+        certDialog.showModal();
+      });
+    });
+
+    certDialog.querySelector('.certificate-close').addEventListener('click', () => certDialog.close());
+    certDialog.addEventListener('close', () => certPreview.removeAttribute('src'));
+    certDialog.addEventListener('click', e => { if (e.target === certDialog) certDialog.close(); });
+
+    /* =============================================
+       CONTACT FORM
+    ============================================= */
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const msg = document.getElementById('msg');
+      msg.innerHTML = '✅ Thanks! Your message has been sent.';
+      e.target.reset();
+      setTimeout(() => { msg.textContent = ''; }, 5000);
+    });
+
+    /* =============================================
+       ACTIVE NAV LINK
+    ============================================= */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav a');
+
+    const navObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
+        }
+      });
+    }, { threshold: 0.35, rootMargin: '-10% 0px -55% 0px' });
+
+    sections.forEach(s => navObs.observe(s));
+
+    /* =============================================
+       SCROLL REVEAL
+    ============================================= */
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => revealObs.observe(el));
+
+    /* =============================================
+       STICKY HEADER SHADOW
+    ============================================= */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+  </script>
+</body>
+</html>
